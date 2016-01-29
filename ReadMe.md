@@ -45,8 +45,9 @@ grace à l'utilisation d'un programme *libxml2-utils* installé dans un containe
 ##Exécution du Test de validation
 
 1- création d'une copie de  l'image en se positinant dans le meme répotoire que le fichier dockerfile et les fichiers annuaire.xml et annuaire.xsd  
-* docker build -t test ./
+* docker build -t imagedemondocker ./
+
 
 2- Exécution de la commande suivante :  
-* docker run -v /home/gtsi/Images:/rep test --name=monconteneur ./val_xml.sh rep/annuaire.xml rep/annuaire.xsd  
+* docker run -v /home/gtsi/Images:/rep imagedemondocker ./val_xml.sh rep/annuaire.xml rep/annuaire.xsd  
 * *Message affiché: rep/annuaire.xsd.*
